@@ -1,0 +1,25 @@
+@import '../../../styles/colors.scss';
+
+.formField {
+    width: 100%;
+    height: 50px;
+    margin: 40px 0;
+    background-color: $color-gray-darker;
+    color: white;
+    border-radius: 4px;
+    padding: 10px 20px 20px;
+
+    &.border-blue {
+        border-bottom: 4px solid $color-primary-medium;
+    }
+
+    &.border-red {
+        border-bottom: 4px solid $color-error-dark;
+    }
+
+    &::placeholder {
+        color: $color-gray-dark;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+            Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    }
+}

@@ -1,0 +1,21 @@
+@import '../../../styles/colors.scss';
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    border-top: 5px solid $color-error-dark;
+    padding-top: 30px;
+
+    img {
+        width: 200px;
+    }
+
+    p {
+        text-align: center;
+        color: white;
+    }
+}

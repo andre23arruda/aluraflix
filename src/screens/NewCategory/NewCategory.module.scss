@@ -1,0 +1,32 @@
+@import '../../../styles/colors.scss';
+
+.newCategoryPage {
+    width: 100%;
+
+    h1 {
+        color: white;
+        text-align: center;
+        width: 100%;
+        font-size: 30pt;
+    }
+
+    form {
+        width: 100%;
+        padding: 40px;
+        margin-bottom: 100px;
+
+        textarea {
+            min-height: 100px;
+            resize: none;
+        }
+
+        .buttonsContainer {
+            display: flex;
+            flex-direction: row;
+
+            button {
+                margin-right: 20px;
+            }
+        }
+    }
+}

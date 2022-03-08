@@ -1,0 +1,43 @@
+@import '../../../styles/colors.scss';
+
+.button {
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    font-size: 15pt;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+
+    &.link {
+        padding: 0;
+
+        a {
+            padding: 15px 0;
+            width: 100%;
+        }
+    }
+
+    &.blue {
+        background-color: $color-primary-medium;
+        color: white;
+    }
+
+    &.red {
+        background-color: $color-error-medium;
+        color: white;
+    }
+
+    &.black {
+        background-color: black;
+        color: white;
+        border: 2px solid white
+    }
+
+    &.gray {
+        background-color: $color-black-lighter;
+    }
+}
