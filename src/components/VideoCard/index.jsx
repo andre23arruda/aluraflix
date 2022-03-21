@@ -1,12 +1,27 @@
+import { getVideoId } from '../../utils/utils'
+
 import styles from './VideoCard.module.scss'
 
-export default function VideoCard({ children, ...props }) {
+export default function VideoCard({ children, borderColor, title, url, ...props }) {
+    const videoId = getVideoId(url)
+
     return (
-        <div
-            className={`${ styles.videoCard } ${ styles[props.border] }`}
+        <a
+            className={`${ styles.videoCard }`}
+            href={ url }
+            alt={ title }
+            target="_blank"
             {...props}
         >
-            {/* <img src="https://i.ytimg.com/vi/pig9ygct154/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDMtLb2FFKVG1Y7acT1SpE9RwZ9nA" alt="Video title" /> */}
-        </div>
+            <h4>{ title }</h4>
+
+            <img
+                alt={ title }
+                style={{ borderColor: borderColor || 'white' }}
+                title={ title }
+                src={`https://img.youtube.com/vi/${ videoId }/hqdefault.jpg`}
+            />
+
+        </a>
     )
 }

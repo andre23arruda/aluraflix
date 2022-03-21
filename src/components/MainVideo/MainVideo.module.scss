@@ -1,0 +1,111 @@
+@import '../../../styles/colors.scss';
+
+.mainVideo {
+    height: 80vh;
+    position: relative;
+    color: white;
+    background-size: cover;
+    background-position: center center;
+
+    .filter {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.5);
+        top: 0px;
+        height: 80vh;
+        width: 100%;
+        z-index: 0;
+    }
+
+    section {
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 100%;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        position: relative;
+        z-index: 10;
+
+        div {
+            width: 50%;
+            display: inline-block;
+            margin: 25px;
+
+            h2 {
+                font-style: normal;
+                font-size: 2.5rem;
+                line-height: 1;
+                margin-top: 0px;
+                margin-bottom: 32px;
+            }
+
+            p {
+                font-size: 20pt;
+            }
+
+            @media (max-width: 600px) {
+                width: 100%;
+                margin: 0;
+            }
+        }
+
+        .iframeContainer {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 56.25%;
+
+            iframe {
+                position: absolute;
+                inset: 0px;
+                width: 100%;
+                height: 100%;
+            }
+
+            @media (max-width: 600px) {
+                display: none;
+            }
+        }
+    }
+
+    .buttonContainer {
+        display: none;
+        width: 100%;
+        justify-content: center;
+        display: none;
+        z-index: 1000;
+    }
+
+    @media (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        section {
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-top: 30%;
+            display: block;
+            height: fit-content;
+            z-index: 10;
+        }
+
+        // h2 {
+        //     font-size: 25pt !important;
+        // }
+
+        p {
+            font-size: 16pt !important;
+        }
+
+        .iframeContainer {
+            display: none
+        }
+
+        .buttonContainer {
+            display: flex
+        }
+    }
+}

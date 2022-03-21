@@ -1,0 +1,61 @@
+@import '../../../styles/colors.scss';
+
+.pageContainer {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h1 {
+        color: white;
+        padding: 40px 40px 0;
+        margin: 0;
+        width: 100%;
+        font-size: 30pt;
+        text-align: center;
+    }
+
+    .category {
+        margin: 0px 40px 40px;
+
+        h3 {
+            font-weight: normal;
+            font-size: 25pt;
+            margin-bottom: 16px;
+            display: inline-block;
+            padding: 20px;
+            line-height: 1;
+            border-radius: 4px;
+            color: white;
+
+            @media (max-width: 600px) {
+                font-size: 15pt;
+            }
+        }
+    }
+
+    .carousel {
+        div > button {
+            top: 35%;
+            height: 50px;
+            width: 50px;
+            background-color: rgba(255, 255, 255, 0.808);
+            color: black;
+            font-size: 30pt;
+            margin: 0 -25px;
+            position: relative;
+            cursor: pointer;
+            border-radius: 50%;
+            padding-bottom: 50px;
+        }
+
+        div:first-child button:after {
+            content: '‹';
+        }
+
+        div:last-child button:after {
+            content: '›';
+        }
+    }
+
+}
