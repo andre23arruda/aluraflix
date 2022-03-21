@@ -47,7 +47,7 @@ export default function MainVideo({ data }) {
 
             <div className={ styles.buttonContainer }>
                 <ButtonLink color="red" as="link">
-                    <a href={ data.url || '#no-response' } target="_blank">
+                    <a href={ data.url || '#no-response' } target="_blank" rel="noreferrer">
                         Assistir
                     </a>
                 </ButtonLink>
