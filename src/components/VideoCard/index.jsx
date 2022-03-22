@@ -17,7 +17,7 @@ export default function VideoCard({ children, borderColor, title, url, ...props 
         >
             <h4>{ title }</h4>
 
-            <Image
+            <img
                 alt={ title }
                 style={{ borderColor: borderColor || 'white' }}
                 title={ title }
