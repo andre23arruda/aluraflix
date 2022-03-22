@@ -4,11 +4,15 @@
     display: block;
     position: relative;
 
-    img {
-        width: 400px;
-        max-width: 80vw;
+    .imageContainer {
         border: 3px solid $color-primary-medium;
-        border-radius: 10px;
+        border-radius: 10px !important;
+        max-width: 80vw !important;
+    }
+
+    img {
+        border-radius: 10px !important;
+        max-width: 80vw !important;
     }
 
     h4 {
@@ -21,6 +25,7 @@
         transition: 0.5s;
         padding: 70px 25px 0;
         margin: 0;
+        z-index: 1000;
 
         &:hover {
             color: white;
