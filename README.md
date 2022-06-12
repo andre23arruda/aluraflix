@@ -26,7 +26,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 
 ## 💻 Projeto
-**MYFLIX é uma aplicação para você cadastrar seus vídeos preferidos do Youtube e salvá-los por categoria  📺 **
+**MYFLIX é uma aplicação para você cadastrar seus vídeos preferidos do Youtube e salvá-los por categoria  📺**
 
 ## Instalação
 ### Pré requisitos
